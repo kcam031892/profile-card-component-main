@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #19a2ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -100px;
+  top: -450px;
+  background: url("/images/bg-pattern-top.svg") no-repeat center center/cover;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  right: -100px;
+  bottom: -550px;
+  background: url("/images/bg-pattern-bottom.svg") no-repeat center center/cover;
+}
+
+.card {
+  background-color: #fff;
+  z-index: 9999;
+  border-radius: 16px;
+}
+.card__header {
+  height: 200px;
+  background: url("/images/bg-pattern-card.svg") no-repeat center center/cover;
+  position: relative;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.card__profile {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: 0.25rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__profile img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__body {
+  padding: 5rem 4rem 2rem;
+  border-bottom: 1px solid #c9c9c9;
+}
+.card__name {
+  text-align: center;
+  color: #2d3248;
+  font-size: 1.5rem;
+}
+.card__age {
+  color: #6a6f81;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.card__location {
+  text-align: center;
+  color: #969696;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.card__footer {
+  padding: 3rem 4rem;
+}
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.card__grid-stats {
+  text-align: center;
+  color: #2d3248;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.card__grid-title {
+  color: #969696;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=main.css.map */
